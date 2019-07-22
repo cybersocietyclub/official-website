@@ -510,7 +510,7 @@ body {
   top: 3px;
   left: 10px;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   opacity: 0;
   visibility: hidden;
@@ -968,9 +968,9 @@ body {
 }
 .about--options {
   display: flex;
-  max-width: 600px;
+  max-width: 400px;
   justify-content: space-between;
-  margin: 0;
+  margin: -30px;
   padding: 0;
   list-style: none;
 }
@@ -986,10 +986,10 @@ body {
   background-repeat: no-repeat;
 }
 .about--options > a:nth-child(1) {
-  background-image: url("../img/about-winners.jpg");
+  background-image: url("../img/goals_about.jpg");
 }
 .about--options > a:nth-child(2) {
-  background-image: url("../img/about-philosophy.jpg");
+  background-image: url("../img/founders_about.jpg");
 }
 .about--options > a:nth-child(3) {
   background-image: url("../img/about-history.jpg");
