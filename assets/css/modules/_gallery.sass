@@ -1,0 +1,322 @@
+.gallery
+  position: relative
+  display: flex
+  width: 960px
+  max-width: 80%
+  height: 100%
+  flex-direction: column
+  justify-content: center
+  margin: 0 auto
+
+  @media (max-width: 1180px)
+    max-width: 100%
+
+  &--banner
+    position: relative
+
+    &::before
+      content: ""
+      position: absolute
+      bottom: 20px
+      left: -15px
+      right: 0
+      height: 2px
+      background-color: $muted-gray
+
+    &::after
+      content: ""
+      position: absolute
+      bottom: 18px
+      left: 0
+      width: 30px
+      height: 4px
+      background-color: $highlight
+
+    h2
+      position: relative
+      font-size: 68px
+      font-weight: 900
+      line-height: 1
+      text-align: center
+      z-index: 1
+
+    button
+      position: relative
+      padding: 5px 17px 5px 12px
+      font-weight: 700
+      text-transform: uppercase
+      background-color: transparent
+      border: none
+
+      .btn-background
+        position: absolute
+        top: 0
+        left: 23px
+        right: 0
+        height: 100%
+        background-color: $highlight
+        z-index: -1
+        transition: left .2s ease-in-out
+
+      &:hover
+        .btn-background
+          left: 0
+
+      &:focus
+        outline: none
+
+      svg
+        position: relative
+        left: 5px
+        width: 15px
+        fill: $white
+
+    img
+      position: absolute
+      bottom: 21px
+      right: -12px
+
+  &--row_1
+    justify-content: space-between
+    display: flex
+    margin: 0
+    padding: 0
+    list-style: none
+	
+    & > a
+      position: relative
+      display: block
+      width: 150px
+      height: 125px
+      text-decoration: none
+      color: $white
+      border: 10px solid $highlight
+      margin: 0 auto 25px auto
+      background:
+        position: center
+        size: cover
+        repeat: no-repeat
+
+      &:nth-child(1)
+        background-image: url("../img/about-winners.jpg")
+
+      &:nth-child(2)
+        background-image: url("../img/about-philosophy.jpg")
+
+      &:nth-child(3)
+        background-image: url("../img/about-history.jpg")
+
+      &:hover
+        h3
+          bottom: -50px
+
+    h3
+      position: absolute
+      bottom: -38px
+      left: 10px
+      font-size: 16px
+      text-transform: uppercase
+      transition: bottom .2s ease-in-out, left .2s ease-in-out
+	  
+  &--row_2
+    justify-content: space-between
+    display: flex
+    margin: 0
+    padding: 0
+    list-style: none
+	
+    & > a
+      position: relative
+      display: block
+      width: 150px
+      height: 125px
+      text-decoration: none
+      color: $white
+      border: 10px solid $highlight
+      margin: 0 auto 25px auto
+      background:
+        position: center
+        size: cover
+        repeat: no-repeat
+
+      &:nth-child(1)
+        background-image: url("../img/about-history.jpg")
+
+      &:nth-child(2)
+        background-image: url("../img/about-philosophy.jpg")
+
+      &:nth-child(3)
+        background-image: url("../img/about-winners.jpg")
+
+      &:hover
+        h3
+          bottom: -50px
+
+    h3
+      position: absolute
+      bottom: -38px
+      left: 10px
+      font-size: 16px
+      text-transform: uppercase
+      transition: bottom .2s ease-in-out, left .2s ease-in-out
+
+  &--row_3
+    justify-content: space-between
+    display: flex
+    margin: 0
+    padding: 0
+    list-style: none
+	
+    & > a
+      position: relative
+      display: block
+      width: 150px
+      height: 125px
+      text-decoration: none
+      color: $white
+      border: 10px solid $highlight
+      margin: 0 auto 25px auto
+      background:
+        position: center
+        size: cover
+        repeat: no-repeat
+
+      &:nth-child(1)
+        background-image: url("../img/about-history.jpg")
+
+      &:nth-child(2)
+        background-image: url("../img/about-philosophy.jpg")
+
+      &:nth-child(3)
+        background-image: url("../img/about-winners.jpg")
+
+      &:hover
+        h3
+          bottom: -50px
+
+    h3
+      position: absolute
+      bottom: -38px
+      left: 10px
+      font-size: 16px
+      text-transform: uppercase
+      transition: bottom .2s ease-in-out, left .2s ease-in-out
+	  
+@media (max-width: 900px)
+
+  .intro
+
+    &--banner
+      height: 380px
+
+      h2
+        font-size: 55px
+
+      img
+        width: 430px
+
+    &--row_1
+
+      & > a
+        margin-right: 30px
+
+        &:last-child
+          margin-right: 0
+
+    &--row_2
+
+      & > a
+        margin-right: 30px
+
+        &:last-child
+          margin-right: 0
+		  
+    &--row_3
+
+      & > a
+        margin-right: 30px
+
+        &:last-child
+          margin-right: 0
+
+@media (max-width: 767px)
+
+  .intro
+
+    &--banner
+      height: 305px
+
+      h2
+        font-size: 44px
+
+      img
+        width: 330px
+
+    &--row_1
+      display: block
+
+      & > a
+        display: block
+        max-width: 100%
+        margin: 0 0 30px 0
+
+        &:last-child
+          margin-bottom: 0
+	
+    &--row_2
+      display: block
+
+      & > a
+        display: block
+        max-width: 100%
+        margin: 0 0 30px 0
+
+        &:last-child
+          margin-bottom: 0
+		  
+    &--row_3
+      display: block
+
+      & > a
+        display: block
+        max-width: 100%
+        margin: 0 0 30px 0
+
+        &:last-child
+          margin-bottom: 0
+
+@media (max-width: 600px)
+
+  .intro
+
+    &--banner
+      height: 360px
+
+      h2
+        font-size: 55px
+
+      img
+        display: none
+
+@media (max-width: 600px) and (max-height: 750px)
+
+  .intro
+
+    &--banner
+      height: auto
+
+      &::before,
+      &::after
+        display: none
+
+      h2
+        margin-top: 0
+
+    &--row_1
+      display: none
+	  
+    &--row_2
+      display: none
+	  
+    &--row_3
+      display: none
