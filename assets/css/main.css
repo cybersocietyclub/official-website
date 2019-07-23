@@ -1056,12 +1056,6 @@ body {
     top: 205px;
     left: 205px;
   }
-  .about--banner img {
-    display: none;
-  }
-  .about--options {
-    display: none;
-  }
 }
 .contact {
   position: fixed;
