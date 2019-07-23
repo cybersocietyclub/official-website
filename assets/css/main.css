@@ -1307,6 +1307,310 @@ body {
     font-size: 24px;
   }
 }
+.gallery {
+  position: relative;
+  display: flex;
+  width: 960px;
+  max-width: 80%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (max-width: 1180px) {
+  .gallery {
+    max-width: 100%;
+  }
+}
+.gallery--banner {
+  position: relative;
+}
+.gallery--banner::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: -15px;
+  right: 0;
+  height: 2px;
+  background-color: #282828;
+}
+.gallery--banner::after {
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  width: 30px;
+  height: 4px;
+  background-color: #0f33ff;
+}
+.gallery--banner h2 {
+  position: relative;
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  z-index: 1;
+}
+.gallery--banner button {
+  position: relative;
+  padding: 5px 17px 5px 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+}
+.gallery--banner button .btn-background {
+  position: absolute;
+  top: 0;
+  left: 23px;
+  right: 0;
+  height: 100%;
+  background-color: #0f33ff;
+  z-index: -1;
+  transition: left 0.2s ease-in-out;
+}
+.gallery--banner button:hover .btn-background {
+  left: 0;
+}
+.gallery--banner button:focus {
+  outline: none;
+}
+.gallery--banner button svg {
+  position: relative;
+  left: 5px;
+  width: 15px;
+  fill: #fff;
+}
+.gallery--banner img {
+  position: absolute;
+  bottom: 21px;
+  right: -12px;
+}
+.gallery--row_1 {
+  justify-content: space-between;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.gallery--row_1 > a {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 125px;
+  text-decoration: none;
+  color: #fff;
+  border: 10px solid #0f33ff;
+  margin: 0 auto 25px auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallery--row_1 > a:nth-child(1) {
+  background-image: url("../img/about-winners.jpg");
+}
+.gallery--row_1 > a:nth-child(2) {
+  background-image: url("../img/about-philosophy.jpg");
+}
+.gallery--row_1 > a:nth-child(3) {
+  background-image: url("../img/about-history.jpg");
+}
+.gallery--row_1 > a:hover h3 {
+  bottom: -50px;
+}
+.gallery--row_1 h3 {
+  position: absolute;
+  bottom: -38px;
+  left: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: bottom 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+.gallery--row_2 {
+  justify-content: space-between;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.gallery--row_2 > a {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 125px;
+  text-decoration: none;
+  color: #fff;
+  border: 10px solid #0f33ff;
+  margin: 0 auto 25px auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallery--row_2 > a:nth-child(1) {
+  background-image: url("../img/about-history.jpg");
+}
+.gallery--row_2 > a:nth-child(2) {
+  background-image: url("../img/about-philosophy.jpg");
+}
+.gallery--row_2 > a:nth-child(3) {
+  background-image: url("../img/about-winners.jpg");
+}
+.gallery--row_2 > a:hover h3 {
+  bottom: -50px;
+}
+.gallery--row_2 h3 {
+  position: absolute;
+  bottom: -38px;
+  left: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: bottom 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+.gallery--row_3 {
+  justify-content: space-between;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.gallery--row_3 > a {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 125px;
+  text-decoration: none;
+  color: #fff;
+  border: 10px solid #0f33ff;
+  margin: 0 auto 25px auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallery--row_3 > a:nth-child(1) {
+  background-image: url("../img/about-history.jpg");
+}
+.gallery--row_3 > a:nth-child(2) {
+  background-image: url("../img/about-philosophy.jpg");
+}
+.gallery--row_3 > a:nth-child(3) {
+  background-image: url("../img/about-winners.jpg");
+}
+.gallery--row_3 > a:hover h3 {
+  bottom: -50px;
+}
+.gallery--row_3 h3 {
+  position: absolute;
+  bottom: -38px;
+  left: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: bottom 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .intro--banner {
+    height: 380px;
+  }
+  .intro--banner h2 {
+    font-size: 55px;
+  }
+  .intro--banner img {
+    width: 430px;
+  }
+  .intro--row_1 > a {
+    margin-right: 30px;
+  }
+  .intro--row_1 > a:last-child {
+    margin-right: 0;
+  }
+  .intro--row_2 > a {
+    margin-right: 30px;
+  }
+  .intro--row_2 > a:last-child {
+    margin-right: 0;
+  }
+  .intro--row_3 > a {
+    margin-right: 30px;
+  }
+  .intro--row_3 > a:last-child {
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .intro--banner {
+    height: 305px;
+  }
+  .intro--banner h2 {
+    font-size: 44px;
+  }
+  .intro--banner img {
+    width: 330px;
+  }
+  .intro--row_1 {
+    display: block;
+  }
+  .intro--row_1 > a {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 30px 0;
+  }
+  .intro--row_1 > a:last-child {
+    margin-bottom: 0;
+  }
+  .intro--row_2 {
+    display: block;
+  }
+  .intro--row_2 > a {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 30px 0;
+  }
+  .intro--row_2 > a:last-child {
+    margin-bottom: 0;
+  }
+  .intro--row_3 {
+    display: block;
+  }
+  .intro--row_3 > a {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 30px 0;
+  }
+  .intro--row_3 > a:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .intro--banner {
+    height: 360px;
+  }
+  .intro--banner h2 {
+    font-size: 55px;
+  }
+  .intro--banner img {
+    display: none;
+  }
+}
+@media (max-width: 600px) and (max-height: 750px) {
+  .intro--banner {
+    height: auto;
+  }
+  .intro--banner::before, .intro--banner::after {
+    display: none;
+  }
+  .intro--banner h2 {
+    margin-top: 0;
+  }
+  .intro--row_1 {
+    display: none;
+  }
+  .intro--row_2 {
+    display: none;
+  }
+  .intro--row_3 {
+    display: none;
+  }
+}
 .perspective {
   position: relative;
   width: 100%;
