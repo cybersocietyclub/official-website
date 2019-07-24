@@ -1415,7 +1415,15 @@ body {
 .gallery--row_1 > a:nth-child(3) {
   background-image: url("../img/about-history.jpg");
 }
+.gallery--row_1 > a:hover {
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(29, 233, 182, 0.2), 0 6px 20px 0 rgba(29, 233, 182, 0.19);
+  border: 2px solid #0f33ff;
+  transform: scale(2);
+  z-index: 999;
+}
 .gallery--row_1 > a:hover h3 {
+  text-shadow: 2px 2px 4px #000000;
   bottom: -50px;
 }
 .gallery--row_1 h3 {
@@ -1455,7 +1463,15 @@ body {
 .gallery--row_2 > a:nth-child(3) {
   background-image: url("../img/about-winners.jpg");
 }
+.gallery--row_2 > a:hover {
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(29, 233, 182, 0.2), 0 6px 20px 0 rgba(29, 233, 182, 0.19);
+  border: 2px solid #0f33ff;
+  transform: scale(2);
+  z-index: 999;
+}
 .gallery--row_2 > a:hover h3 {
+  text-shadow: 2px 2px 4px #000000;
   bottom: -50px;
 }
 .gallery--row_2 h3 {
@@ -1495,7 +1511,15 @@ body {
 .gallery--row_3 > a:nth-child(3) {
   background-image: url("../img/about-winners.jpg");
 }
+.gallery--row_3 > a:hover {
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(29, 233, 182, 0.2), 0 6px 20px 0 rgba(29, 233, 182, 0.19);
+  border: 2px solid #0f33ff;
+  transform: scale(2);
+  z-index: 999;
+}
 .gallery--row_3 > a:hover h3 {
+  text-shadow: 2px 2px 4px #000000;
   bottom: -50px;
 }
 .gallery--row_3 h3 {
