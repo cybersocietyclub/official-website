@@ -654,6 +654,18 @@ body {
 .intro--options p {
   margin-bottom: 0;
 }
+.intro .icon {
+  display: block;
+  width: 50px;
+  padding-top: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 600px) {
+  .intro .icon {
+    display: none;
+  }
+}
 
 @media (max-width: 900px) {
   .intro--banner {
