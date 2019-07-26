@@ -1725,6 +1725,13 @@ body {
   opacity: 0;
   background-color: #0f33ff;
 }
+@media (max-width: 450px) {
+  .outer-nav > li::before {
+    width: 95%;
+    height: 5px;
+    top: 55%;
+  }
+}
 .outer-nav > li.is-active::before {
   opacity: 1;
 }
