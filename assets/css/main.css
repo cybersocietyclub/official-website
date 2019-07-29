@@ -498,6 +498,11 @@ body {
   list-style-position: inside;
   z-index: 10;
 }
+@media (max-width: 600px) {
+  .side-nav {
+    display: none;
+  }
+}
 .side-nav > li {
   position: relative;
   top: -5px;
@@ -1853,6 +1858,9 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     width: 25%;
     padding-bottom: 25%;
   }
+}
+.g-main-content {
+  padding-top: 10%;
 }
 
 /*# sourceMappingURL=main.css.map */
