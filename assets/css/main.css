@@ -1436,6 +1436,15 @@ body {
   padding: 0;
   list-style: none;
 }
+.gallery--grid-section-closed {
+  position: absolute;
+  bottom: -38px;
+  left: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: bottom 0.2s ease-in-out, left 0.2s ease-in-out;
+  display: none;
+}
 .gallery--grid > a {
   position: relative;
   display: block;
