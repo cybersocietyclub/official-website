@@ -76,9 +76,12 @@
       bottom: 21px
       right: -12px
 
-  &--row_1
+  &--grid
     justify-content: space-between
-    display: flex
+    display: grid
+    grid-template-columns: 200px repeat(auto-fill, 200px)
+    grid-auto-rows: auto
+    grid-auto-columns: auto
     margin: 0
     padding: 0
     list-style: none
@@ -90,7 +93,7 @@
       height: 125px
       text-decoration: none
       color: $white
-      border: 10px solid $highlight
+      border: 5px solid $highlight
       margin: 0 auto 25px auto
       background:
         position: center
@@ -105,102 +108,15 @@
 
       &:nth-child(3)
         background-image: url("../img/about-history.jpg")
-
-      &:hover
-        transition: transform .2s
-        box-shadow: 0 4px 8px 0 rgba(29,233,182, 0.2), 0 6px 20px 0 rgba(29,233,182, 0.19)
-        border: 2px solid $highlight
-        transform: scale(2)
-        z-index: 999
-        h3
-          text-shadow: 2px 2px 4px #000000
-          bottom: -50px
-
-    h3
-      position: absolute
-      bottom: -38px
-      left: 10px
-      font-size: 16px
-      text-transform: uppercase
-      transition: bottom .2s ease-in-out, left .2s ease-in-out
-	  
-  &--row_2
-    justify-content: space-between
-    display: flex
-    margin: 0
-    padding: 0
-    list-style: none
-	
-    & > a
-      position: relative
-      display: block
-      width: 150px
-      height: 125px
-      text-decoration: none
-      color: $white
-      border: 10px solid $highlight
-      margin: 0 auto 25px auto
-      background:
-        position: center
-        size: cover
-        repeat: no-repeat
-
-      &:nth-child(1)
-        background-image: url("../img/about-history.jpg")
-
-      &:nth-child(2)
-        background-image: url("../img/about-philosophy.jpg")
-
-      &:nth-child(3)
+      
+      &:nth-child(4)
         background-image: url("../img/about-winners.jpg")
 
-      &:hover
-        transition: transform .2s
-        box-shadow: 0 4px 8px 0 rgba(29,233,182, 0.2), 0 6px 20px 0 rgba(29,233,182, 0.19)
-        border: 2px solid $highlight
-        transform: scale(2)
-        z-index: 999
-        h3
-          text-shadow: 2px 2px 4px #000000
-          bottom: -50px
-
-    h3
-      position: absolute
-      bottom: -38px
-      left: 10px
-      font-size: 16px
-      text-transform: uppercase
-      transition: bottom .2s ease-in-out, left .2s ease-in-out
-
-  &--row_3
-    justify-content: space-between
-    display: flex
-    margin: 0
-    padding: 0
-    list-style: none
-	
-    & > a
-      position: relative
-      display: block
-      width: 150px
-      height: 125px
-      text-decoration: none
-      color: $white
-      border: 10px solid $highlight
-      margin: 0 auto 25px auto
-      background:
-        position: center
-        size: cover
-        repeat: no-repeat
-
-      &:nth-child(1)
-        background-image: url("../img/about-history.jpg")
-
-      &:nth-child(2)
+      &:nth-child(5)
         background-image: url("../img/about-philosophy.jpg")
 
-      &:nth-child(3)
-        background-image: url("../img/about-winners.jpg")
+      &:nth-child(6)
+        background-image: url("../img/about-history.jpg")
 
       &:hover
         transition: transform .2s
@@ -233,24 +149,9 @@
       img
         width: 430px
 
-    &--row_1
-
-      & > a
-        margin-right: 30px
-
-        &:last-child
-          margin-right: 0
-
-    &--row_2
-
-      & > a
-        margin-right: 30px
-
-        &:last-child
-          margin-right: 0
-		  
-    &--row_3
-
+    &--grid
+      grid-template-columns: auto auto
+      
       & > a
         margin-right: 30px
 
@@ -270,8 +171,8 @@
       img
         width: 330px
 
-    &--row_1
-      display: block
+    &--grid
+      display: grid
 
       & > a
         display: block
@@ -280,28 +181,7 @@
 
         &:last-child
           margin-bottom: 0
-	
-    &--row_2
-      display: block
-
-      & > a
-        display: block
-        max-width: 100%
-        margin: 0 0 30px 0
-
-        &:last-child
-          margin-bottom: 0
-		  
-    &--row_3
-      display: block
-
-      & > a
-        display: block
-        max-width: 100%
-        margin: 0 0 30px 0
-
-        &:last-child
-          margin-bottom: 0
+          
 
 @media (max-width: 600px)
 
@@ -330,11 +210,5 @@
       h2
         margin-top: 0
 
-    &--row_1
-      display: none
-	  
-    &--row_2
-      display: none
-	  
-    &--row_3
+    &--grid
       display: none
