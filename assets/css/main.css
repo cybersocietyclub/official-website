@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif&display=swap");
 @font-face {
   font-family: "Montserrat";
   src: url("fonts/Montserrat-Black.eot");
@@ -1860,7 +1861,12 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   }
 }
 .g-main-content {
-  padding-top: 10%;
+  padding-top: 5%;
+  font-family: "Noto Serif", serif;
+}
+
+.g-body {
+  overflow-y: scroll;
 }
 
 /*# sourceMappingURL=main.css.map */
