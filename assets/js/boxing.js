@@ -34,8 +34,10 @@ var Boxlayout = function() {
       element.classList.add(expandedClass);
       wrapper.classList.add(hasExpandedClass);
       header.style.display = 'none';
-      sideNav.style.display = 'none';
       banner.style.display = 'none';
+      if(screen.width > 1180) {
+        sideNav.style.display = 'none';
+      }
     }
   }
 
@@ -44,8 +46,10 @@ var Boxlayout = function() {
       element.classList.remove(expandedClass);
       wrapper.classList.remove(hasExpandedClass);
       header.style.display = 'flex';
-      sideNav.style.display = 'flex';
       banner.style.display = 'block';
+      if(screen.width > 1180) {
+        sideNav.style.display = 'flex';
+      }
     }
   }
 
