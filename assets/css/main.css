@@ -498,6 +498,11 @@ body {
   list-style-position: inside;
   z-index: 10;
 }
+@media (max-width: 600px) {
+  .side-nav {
+    display: none;
+  }
+}
 .side-nav > li {
   position: relative;
   top: -5px;
@@ -522,6 +527,11 @@ body {
   color: #555;
   font-size: 14px;
   font-weight: 300;
+}
+@media (max-width: 600px) {
+  .side-nav > li::before {
+    display: none;
+  }
 }
 .side-nav li:nth-child(1)::before {
   content: "01";
