@@ -14,6 +14,9 @@
   &--banner
     position: relative
     height: 475px
+    @media (max-width:600px)
+      heigth: 270px
+      margin: 10px
 
     &::before
       content: ""
@@ -93,7 +96,7 @@
     margin: -30px
     padding: 0
     list-style: none
-
+ 
     & > a
       position: relative
       width: 150px
@@ -163,6 +166,7 @@
 
     &--banner
       height: auto
+      margin-bottom: 130px
 
       &::before
         left: 155px
@@ -181,3 +185,11 @@
         &::after
           top: 205px
           left: 205px
+      
+      img
+        width: 200px
+        right: -20px
+    
+    &--options
+        bottom: 50px
+        margin: 0px

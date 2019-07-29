@@ -732,6 +732,7 @@ body {
 @media (max-width: 600px) and (max-height: 750px) {
   .intro--banner {
     height: auto;
+    bottom: -20%;
   }
   .intro--banner::before, .intro--banner::after {
     display: none;
@@ -920,6 +921,12 @@ body {
   position: relative;
   height: 475px;
 }
+@media (max-width: 600px) {
+  .about--banner {
+    heigth: 270px;
+    margin: 10px;
+  }
+}
 .about--banner::before {
   content: "";
   position: absolute;
@@ -1061,6 +1068,7 @@ body {
 @media (max-width: 600px) {
   .about--banner {
     height: auto;
+    margin-bottom: 130px;
   }
   .about--banner::before {
     left: 155px;
@@ -1079,6 +1087,14 @@ body {
   .about--banner h2::after {
     top: 205px;
     left: 205px;
+  }
+  .about--banner img {
+    width: 200px;
+    right: -20px;
+  }
+  .about--options {
+    bottom: 50px;
+    margin: 0px;
   }
 }
 .contact {
@@ -1693,6 +1709,11 @@ body {
 .effect-rotate-left--animate .container {
   transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
   outline: 30px solid #0f33ff;
+}
+@media (max-width: 600px) {
+  .effect-rotate-left--animate .container {
+    outline: 10px solid #0f33ff;
+  }
 }
 
 .outer-nav {
