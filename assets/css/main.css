@@ -528,11 +528,6 @@ body {
   font-size: 14px;
   font-weight: 300;
 }
-@media (max-width: 600px) {
-  .side-nav > li::before {
-    display: none;
-  }
-}
 .side-nav li:nth-child(1)::before {
   content: "01";
 }
@@ -1819,6 +1814,9 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     width: 25%;
     padding-bottom: 25%;
   }
+}
+.g-main-content {
+  padding-top: 10%;
 }
 
 /*# sourceMappingURL=main.css.map */
