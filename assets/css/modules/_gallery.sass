@@ -99,6 +99,9 @@
       z-index: 1000
       width: 100%
       height: 100%
+      text-align: center
+      align-items: center
+
       &:hover
         //transition: none
         transform: none
@@ -140,6 +143,44 @@
 
         .#{$section-class}.#{$section-expanded-class} & 
           visibility: visible
+          opacity: 1
+          transition: opacity 200ms linear $section-transition-duration
+
+      &-content
+        position: absolute
+        display: flex
+        margin: 0
+        padding: 0
+        list-style: none
+        line-height: 1
+        opacity: 0
+        z-index: 0
+        color: #fff
+        overflow: hidden
+        transform: scale(1)
+        will-change: transform
+        transition-property: $section-transition-property
+        transition-duration: $section-transition-duration
+        transition-timing-function: $section-transition-timing-function
+
+        & > div
+          position: relative
+          display: block
+          width: 200px
+          height: 150px
+          line-height: 150px
+          margin: 0 auto 25px auto
+          background-color: #00BCD4
+
+        .#{$section-class}.#{$section-expanded-class} & 
+          width: 100%
+          height: auto
+          visibility: visible
+          display: grid
+          justify-content: space-between
+          grid-template-columns: 200px repeat(auto-fill, 200px)
+          grid-auto-rows: auto
+          grid-auto-columns: auto
           opacity: 1
           transition: opacity 200ms linear $section-transition-duration
 	
@@ -214,6 +255,10 @@
 
         &:last-child
           margin-right: 0
+
+        &:hover
+          transform: none
+          transition: none
 
 @media (max-width: 767px)
 
