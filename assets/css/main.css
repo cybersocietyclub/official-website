@@ -1446,7 +1446,7 @@ body {
   background-image: url("../img/gallery-back.png");
   background-size: over;
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: center center;
   border: none;
   position: absolute;
   display: flex;
