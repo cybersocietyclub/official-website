@@ -1023,10 +1023,10 @@ body {
   background-repeat: no-repeat;
 }
 .about--options > a:nth-child(1) {
-  background-image: url("../img/goals_about.jpg");
+  background-image: url("https://i.imgur.com/VTJcXlM.jpg");
 }
 .about--options > a:nth-child(2) {
-  background-image: url("../img/founders_about.jpg");
+  background-image: url("https://i.imgur.com/QVSu1Hd.jpg");
 }
 .about--options > a:nth-child(3) {
   background-image: url("../img/about-history.jpg");
@@ -1589,7 +1589,7 @@ body {
 }
 .gallery--grid h3 {
   position: absolute;
-  bottom: -43px;
+  bottom: -10px;
   left: 10px;
   font-size: 16px;
   text-transform: uppercase;
