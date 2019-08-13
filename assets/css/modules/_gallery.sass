@@ -121,76 +121,6 @@
     margin: 0
     padding: 0
     list-style: none
-
-    &-section
-      &-closed
-        position: absolute
-        display: flex
-        top: 0
-        right: 0
-        visibility: hidden
-        width: 3rem
-        height: 3rem
-        align-items: center
-        justify-content: center
-        line-height: 1
-        font-size: 2rem
-        text-align: center
-        color: #fff
-        opacity: 0
-        cursor: pointer
-        transition: opacity 200ms linear
-
-        .#{$section-class}.#{$section-expanded-class} & 
-          visibility: visible
-          opacity: 1
-          transition: opacity 200ms linear $section-transition-duration
-
-      &-content
-        position: absolute
-        display: flex
-        margin: 0
-        padding: 0
-        list-style: none
-        line-height: 1
-        opacity: 0
-        z-index: 0
-        color: #fff
-        overflow: hidden
-        transform: scale(1)
-        will-change: transform
-        transition-property: $section-transition-property
-        transition-duration: $section-transition-duration
-        transition-timing-function: $section-transition-timing-function
-
-        & > div
-          position: relative
-          display: block
-          width: 240px
-          height: 190px
-          line-height: 190px
-          margin: 0 auto 25px auto
-          background-color: #00BCD4
-          border: 5px solid $highlight
-          overflow: hidden
-          
-          img
-            min-height: 100%
-            min-width: 100%
-            padding: 0
-            margin: 0
-
-        .#{$section-class}.#{$section-expanded-class} & 
-          width: 100%
-          height: auto
-          visibility: visible
-          display: grid
-          justify-content: space-between
-          grid-template-columns: 250px repeat(auto-fill, 250px)
-          grid-auto-rows: auto
-          grid-auto-columns: auto
-          opacity: 1
-          transition: opacity 200ms linear $section-transition-duration
 	
     & > a
       position: relative
@@ -216,13 +146,13 @@
         background-image: url("../img/decipher_e.jpg")
       
       &:nth-child(4)
-        background-image: url("../img/ethicalhacking_e.jpg")
+        background-image: url("../img/firebase_e.jpg")
 
       &:nth-child(5)
         background-image: url("../img/flutter_e.jpg")
 
       &:nth-child(6)
-        background-image: url("../img/firebase_e.jpg")
+        background-image: url("../img/ethicalhacking_e.jpg")
 
       &:hover
         transition: transform .2s

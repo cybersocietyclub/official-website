@@ -1477,75 +1477,6 @@ body {
   padding: 0;
   list-style: none;
 }
-.gallery--grid-section-closed {
-  position: absolute;
-  display: flex;
-  top: 0;
-  right: 0;
-  visibility: hidden;
-  width: 3rem;
-  height: 3rem;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  font-size: 2rem;
-  text-align: center;
-  color: #fff;
-  opacity: 0;
-  cursor: pointer;
-  transition: opacity 200ms linear;
-}
-.gallery--grid-section.gallery--grid-section-is-expanded .gallery--grid-section-closed {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 200ms linear 600ms;
-}
-.gallery--grid-section-content {
-  position: absolute;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  line-height: 1;
-  opacity: 0;
-  z-index: 0;
-  color: #fff;
-  overflow: hidden;
-  transform: scale(1);
-  will-change: transform;
-  transition-property: all;
-  transition-duration: 600ms;
-  transition-timing-function: cubic-bezier(0.4, 0.2, 0, 1);
-}
-.gallery--grid-section-content > div {
-  position: relative;
-  display: block;
-  width: 240px;
-  height: 190px;
-  line-height: 190px;
-  margin: 0 auto 25px auto;
-  background-color: #00BCD4;
-  border: 5px solid #0f33ff;
-  overflow: hidden;
-}
-.gallery--grid-section-content > div img {
-  min-height: 100%;
-  min-width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.gallery--grid-section.gallery--grid-section-is-expanded .gallery--grid-section-content {
-  width: 100%;
-  height: auto;
-  visibility: visible;
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: 250px repeat(auto-fill, 250px);
-  grid-auto-rows: auto;
-  grid-auto-columns: auto;
-  opacity: 1;
-  transition: opacity 200ms linear 600ms;
-}
 .gallery--grid > a {
   position: relative;
   display: block;
@@ -1569,13 +1500,13 @@ body {
   background-image: url("../img/decipher_e.jpg");
 }
 .gallery--grid > a:nth-child(4) {
-  background-image: url("../img/ethicalhacking_e.jpg");
+  background-image: url("../img/firebase_e.jpg");
 }
 .gallery--grid > a:nth-child(5) {
   background-image: url("../img/flutter_e.jpg");
 }
 .gallery--grid > a:nth-child(6) {
-  background-image: url("../img/firebase_e.jpg");
+  background-image: url("../img/ethicalhacking_e.jpg");
 }
 .gallery--grid > a:hover {
   transition: transform 0.2s;
